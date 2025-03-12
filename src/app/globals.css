@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+body{
+    margin: 5%;
+    margin-top: 2%;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+input::placeholder {
+  color: theme("colors.gray.500"); /* Light mode */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.dark input::placeholder {
+  color: theme("colors.gray.300"); /* Dark mode */
+}
+
+
+/* Light Mode */
+.bg-glass {
+    background: rgba(235, 232, 232, 0.141); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 3px solid rgba(26, 24, 24, 0.1); /* Optional border */
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .bg-glass:hover {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(15px); 
+  }
+  
+  /* Dark Mode */
+  .bg-glass-dark {
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Optional border */
+  }
+  
+    .bg-glass-dark:hover {
+    background: rgba(200, 133, 133, 0.455); 
+    backdrop-filter: blur(15px); 
+  }
