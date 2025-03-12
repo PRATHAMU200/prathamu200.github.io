@@ -91,9 +91,14 @@ export default function Certifications() {
               <IoMdCheckmarkCircle className="text-green-500 w-6 h-6" />
               <div>
                 <h3 className="text-lg font-semibold">{cert.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  {cert.issuer} - {cert.year}
-                </p>
+                <div className="">
+                  <p className="text-gray-500 dark:text-gray-400">
+                    {cert.issuer} - {cert.year}
+                  </p>
+                  <a className="text-blue-400" target="_blank" href={cert.url}>
+                    Verify
+                  </a>
+                </div>
               </div>
             </div>
           ))}
