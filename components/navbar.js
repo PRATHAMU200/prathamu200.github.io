@@ -127,6 +127,7 @@ export default function NavBar() {
             </li>
             <li className="hover:bg-blue-100 dark:hover:bg-gray-700 rounded-lg transition duration-300">
               <a
+                target="_blank"
                 href="https://mercykknight.github.io/"
                 className="hover:text-blue-500 flex flex-col justify-center items-center py-2 px-3"
               >

@@ -39,7 +39,7 @@ export default function Education() {
             <li>
               Worked on projects involving EV dashboards, web&app rojects and
               other.{" "}
-              <a className="text-blue-400" href="/project">
+              <a className="text-blue-400" href="/projects">
                 [Project Links]
               </a>
             </li>
