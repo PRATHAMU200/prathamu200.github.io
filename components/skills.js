@@ -33,6 +33,7 @@ import {
   SiWireshark,
   SiCyberdefenders,
 } from "react-icons/si";
+import Image from "next/image";
 
 export default function TechnicalSkills() {
   const skills = [
@@ -105,7 +106,15 @@ export default function TechnicalSkills() {
     },
     {
       name: "MATLAB",
-      icon: <img src="/MATLAB.png" className="w-10 h-10"></img>,
+      icon: (
+        <Image
+          alt="Matlab"
+          width={80}
+          height={80}
+          src="/MATLAB.png"
+          className="w-10 h-10"
+        ></Image>
+      ),
     },
     { name: "Git", icon: <FaGitAlt className="text-orange-500 w-10 h-10" /> },
     {

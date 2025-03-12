@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 export default function Education() {
   return (
@@ -6,7 +7,13 @@ export default function Education() {
       {/* College Entry */}
       <div className="bg-gray-80 dark:bg-gray-800 p-4 rounded-lg shadow-xl flex items-start space-x-4 transition-transform transform hover:scale-105 duration-300">
         {/* Icon */}
-        <img src="/DTU.png" className="w-8 h-8 flex-shrink-0"></img>
+        <Image
+          src="/DTU.png"
+          alt="DTU Logo"
+          width={80}
+          height={80}
+          className="w-15 h-15 flex-shrink-0"
+        ></Image>
 
         {/* College Details */}
         <div>
@@ -47,7 +54,13 @@ export default function Education() {
 
       <div className="bg-gray-80 dark:bg-gray-800 p-4 rounded-lg shadow-xl flex items-start space-x-4 transition-transform transform hover:scale-105 duration-300">
         {/* Icon */}
-        <img src="/iitm.png" className="w-8 h-8 flex-shrink-0"></img>
+        <Image
+          src="/iitm.png"
+          alt="IITM Logo"
+          width={80}
+          height={80}
+          className="w-15 h-15 flex-shrink-0"
+        ></Image>
 
         {/* College Details */}
         <div>
@@ -80,7 +93,7 @@ export default function Education() {
       </div>
       <div className="bg-gray-80 dark:bg-gray-800 p-4 rounded-lg shadow-xl flex items-start space-x-4 transition-transform transform hover:scale-105 duration-300">
         {/* Icon */}
-        <GraduationCap className="w-8 h-8 text-blue-500 flex-shrink-0" />
+        <GraduationCap className="w-15 h-15 text-blue-500 flex-shrink-0" />
 
         {/* College Details */}
         <div>

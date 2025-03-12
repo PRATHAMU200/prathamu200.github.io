@@ -2,6 +2,7 @@
 import { Mail, Send } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Connect() {
   const [formData, setFormData] = useState({
@@ -43,7 +44,9 @@ export default function Connect() {
       {/* Left Section - Contact Form */}
       <div className="md:w-1/2 w-full">
         <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
-          Let's <span className="text-yellow-500">Talk</span>
+          <p>
+            Let&apos;s <span className="text-yellow-500">Talk</span>
+          </p>
         </h2>
         <p className="text-gray-600 dark:text-gray-300 mb-6">
           Feel free to reach out for collaborations or just a friendly chat.
@@ -120,9 +123,11 @@ export default function Connect() {
 
       {/* Right Section - Image */}
       <div className="hidden md:block md:w-1/2">
-        <img
+        <Image
           src="/finalgif.gif"
           alt="Contact"
+          width={450}
+          height={450}
           // className="w-full max-w-md mx-auto"
           className="w-[450px] h-[450px] object-cover mx-auto"
         />

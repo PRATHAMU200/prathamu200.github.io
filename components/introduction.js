@@ -19,7 +19,7 @@ export default function Introduction({ isMobile }) {
     <>
       <div className="space-y-5 mt-5">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white ">
-          I'm <span className="text-blue-500 ">Pratham Upadhyay</span>
+          I&apos;m <span className="text-blue-500 ">Pratham Upadhyay</span>
         </h1>
         <h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
           I am a{" "}
@@ -117,10 +117,10 @@ export default function Introduction({ isMobile }) {
           </a>
         </div>
         <p className="mt-8 text-lg">
-          I'm a 3rd-year Electrical Engineering student 🎓 from Delhi
+          I&apos;m a 3rd-year Electrical Engineering student 🎓 from Delhi
           Technological University, graduating in 2026. I have a burning passion
           for programming 💻, development, and working on innovative projects
-          🚀. I'm always on the lookout for learning about new and upcoming
+          🚀. I&apos;m always on the lookout for learning about new and upcoming
           technologies 🛠️ and making meaningful contributions to them.
         </p>
       </div>

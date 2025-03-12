@@ -7,6 +7,7 @@ import Education from "./education";
 import TechnicalSkills from "./skills";
 import Certifications from "./certification";
 import { FaMedal } from "react-icons/fa";
+import Image from "next/image";
 export default function AboutMe() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -61,9 +62,11 @@ export default function AboutMe() {
       </nav>
       <div className="md:flex w-full md:ml-48 p-4 space-x-16">
         <div className="flex flex-col items-center space-y-6 w-full md:w-1/3 ">
-          <img
+          <Image
             src="/finalgif.gif" // Update the image path as necessary
             alt="Profile Picture"
+            width={35}
+            height={35}
             className="w-35 h-35 rounded-full border-4 border-blue-500 shadow-lg transition-transform transform hover:scale-110 duration-300 object-cover mx-auto"
           />
           <div className="flex flex-row justify-center items-center space-x-3 hover:text-blue-400 transition-transform transform hover:scale-110 duration-300">
