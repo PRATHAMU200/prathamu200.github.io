@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
+import Link from "next/link";
+
 import {
   Briefcase,
   GraduationCap,
@@ -45,16 +47,16 @@ export default function NavBar() {
     <nav className="bg-white/50 dark:bg-gray-900/50 shadow-md rounded-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <h1 className="font-mono italic text-2xl font-bold text-gray-800 dark:text-white transition-transform transform hover:scale-105 duration-300">
-          <a href="/">{"<prathamu200/>"}</a>
+          <Link href="/">{"<prathamu200/>"}</Link>
         </h1>
         {/* Mobile Screen or WebScreen */}
         {!isMobile ? (
           <ul className="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300">
             <li className="hover:bg-blue-100 dark:hover:bg-gray-700 px-1 py-1 rounded-lg transition duration-300 transition-transform transform hover:scale-110 duration-300">
-              <a href="/" className="hover:text-blue-500 flex items-center">
+              <Link href="/" className="hover:text-blue-500 flex items-center">
                 <CircleUserRound className="w-4 h-4 mr-2" />
                 About
-              </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 dark:hover:bg-gray-700 px-1 py-1 rounded-lg transition duration-300 transition-transform transform hover:scale-110 duration-300">
               <a
@@ -70,7 +72,7 @@ export default function NavBar() {
                 href="/gallery"
                 className="hover:text-blue-500 flex items-center"
               >
-                <Image className="w-4 h-4 mr-2" />
+                <Image alt="" className="w-4 h-4 mr-2" />
                 Gallery
               </a>
             </li>
@@ -97,13 +99,13 @@ export default function NavBar() {
         ) : (
           <ul className="bg-glass dark:bg-glass-dark text-xs fixed space-x-2 bottom-10 left-0 right-0 mx-auto w-auto max-w-max bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-80 border-1 border-black dark:border-white shadow-lg rounded-lg backdrop-blur-md py-1 px-2 flex justify-between items-center">
             <li className="hover:bg-blue-100 dark:hover:bg-gray-700 rounded-lg transition duration-300">
-              <a
+              <Link
                 href="/"
                 className="hover:text-blue-500 flex flex-col justify-center items-center py-2 px-3"
               >
                 <CircleUserRound className="w-4 h-4" />
                 About
-              </a>
+              </Link>
             </li>
             <li className="hover:bg-blue-100 dark:hover:bg-gray-700 rounded-lg transition duration-300">
               <a
@@ -119,7 +121,7 @@ export default function NavBar() {
                 href="/gallery"
                 className="hover:text-blue-500 flex flex-col justify-center items-center py-2 px-3"
               >
-                <Image className="w-4 h-4" />
+                <Image alt="Gallery" className="w-4 h-4" />
                 Gallery
               </a>
             </li>
