@@ -65,8 +65,8 @@ export default function AboutMe() {
           <Image
             src="/PrathamGiblismall.png" // Update the image path as necessary
             alt="Profile Picture"
-            width={100}
-            height={100}
+            width={250}
+            height={250}
             className="w-35 h-35 rounded-full border-4 border-blue-500 shadow-lg transition-transform transform hover:scale-110 duration-300 object-cover mx-auto"
           />
           <div className="flex flex-row justify-center items-center space-x-3 hover:text-blue-400 transition-transform transform hover:scale-110 duration-300">
