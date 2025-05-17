@@ -108,7 +108,7 @@ export default function Introduction({ isMobile }) {
         </div>
         <div className="mb-2 mt-2">
           <a
-            href="/Pratham_Upadhyay_Official_Resume.pdf"
+            href="/Pratham_Upadhyay_Resume_2025.pdf"
             target="_blank"
             className="space-x-3 inline-flex bg-glass font-semibold py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transition-transform transform hover:scale-110 duration-300"
           >
