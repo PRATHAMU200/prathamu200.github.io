@@ -15,6 +15,11 @@ input::placeholder {
   color: theme("colors.gray.300"); /* Dark mode */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 /* Light Mode */
 .bg-glass {

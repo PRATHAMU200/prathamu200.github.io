@@ -1,4 +1,5 @@
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 import { Download } from "lucide-react";
 import {
   FaGithub,
@@ -19,7 +20,18 @@ export default function Introduction({ isMobile }) {
     <>
       <div className="space-y-5 mt-5">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white ">
-          I&apos;m <span className="text-blue-500 ">Pratham Upadhyay</span>
+          I&apos;m{" "}
+          <span className="text-blue-500 ">
+            <Typewriter
+              words={["Pratham Upadhyay"]}
+              loop={2}
+              cursor
+              cursorStyle="|"
+              typeSpeed={90}
+              deleteSpeed={0}
+              delaySpeed={2000}
+            />
+          </span>
         </h1>
         <h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
           I am a{" "}
