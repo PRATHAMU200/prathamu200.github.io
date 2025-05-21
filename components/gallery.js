@@ -15,6 +15,7 @@ const images = [
   "/gallery/guvi1.png",
   "/gallery/guvi2.png",
   "/gallery/guvi3.png",
+  "/gallery/BitGuard 2.0 - Certificate of Achievement.jpg",
 ];
 
 export default function Gallery() {
