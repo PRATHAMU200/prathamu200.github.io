@@ -5,6 +5,23 @@ import { Search, Filter } from "lucide-react"; // Import icons
 
 const projects = [
   {
+    name: "KnightFight",
+    logo: "/projects/knightfight.png", // Make sure the image exists in your public/projects directory
+    description:
+      "A real-time multiplayer chess game with guest and authenticated modes, match history, and a professional game-like UI.",
+    link: "https://github.com/PRATHAMU200/knightfight", // Replace with correct repo or deployed link
+    tags: [
+      "Web",
+      "Next.js",
+      "React",
+      "Socket.IO",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Chess",
+    ],
+  },
+
+  {
     name: "CollegeHelp",
     logo: "/projects/collegehelp.png",
     description:
